@@ -23,7 +23,7 @@ public class for_15552 {
 			bw.write((num1+num2)+"\n");
 		}
 		bw.flush();
-		bw.close();		
+		bw.close();	
 		
 	}
 	

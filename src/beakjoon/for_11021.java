@@ -21,7 +21,7 @@ public class for_11021 {
 			bw.write("Case #"+i+": "+(Integer.parseInt(stk.nextToken())+Integer.parseInt(stk.nextToken()))+"\n");
 		}
 		bw.flush();
-		bw.close();		
+		bw.close();	
 		
 	}
 	

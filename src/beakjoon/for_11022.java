@@ -20,10 +20,10 @@ public class for_11022 {
 			st = new StringTokenizer(br.readLine()," ");
 			int num1 = Integer.parseInt(st.nextToken());
 			int num2 = Integer.parseInt(st.nextToken());
-			bw.write("Case #"+T+": ");
+			bw.write("Case #"+i+": ");
 			bw.write(num1+" + "+num2+" = "+(num1+num2)+"\n");
-			bw.flush();
 		}
+		bw.flush(); 
 		bw.close();
 
 	}

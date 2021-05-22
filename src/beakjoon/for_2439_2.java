@@ -17,8 +17,8 @@ public class for_2439_2 {
 		
 		int N = Integer.parseInt(br.readLine());
 		
-		for(int i=1; i<=N; i++) {
-			for(int j=N; j>0; j--) {
+		for(int i=1; i<=N; i++) { //5줄
+			for(int j=N; j>0; j--) { //한줄에 무조건 '5'개의 문자 출력
 				if(j>i) 
 					bw.write(" ");	
 				else
