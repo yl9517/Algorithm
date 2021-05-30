@@ -11,35 +11,37 @@ import java.util.StringTokenizer;
 
 
 
-public class for_10871 {
+public class for_10872_2 {
 
 	public static void main(String[] args) throws IOException {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		StringTokenizer st;
-		StringBuilder sb = new StringBuilder();
 
 		st = new StringTokenizer(br.readLine()," ");
-		
 		int N = Integer.parseInt(st.nextToken()); //정수 n개
 		int X = Integer.parseInt(st.nextToken());  //x보다 작은 수 출력
 		
-		//int[] list = new int[N];
+		int[] list = new int[N];
 		
+
 		st = new StringTokenizer(br.readLine()," ");
 		
 		for(int i=0; i<N; i++) {
-			int value = Integer.parseInt(st.nextToken()); 
+			list[i] = Integer.parseInt(st.nextToken()); 
 			
 
-			if(value < X) 
-				sb.append(value).append(' '); //sb에 값 추
-			
+			if(list[i] < X) {
+				bw.write(list[i]+" ");
+			}
 
 		}
-		System.out.println(sb);
+		bw.flush();
+		bw.close();
 		
 	}
 
 }
+
