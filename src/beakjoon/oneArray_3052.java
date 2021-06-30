@@ -17,12 +17,8 @@ public class oneArray_3052 {
 		int[] input = new int[10];
 		List<Integer> arr = new ArrayList<Integer>();
 		
-		for(int i=0; i<input.length; i++) { //숫자 입력받기
-			input[i] = Integer.parseInt(br.readLine());
-		}
-		
-		
 		for(int i=0; i<input.length; i++) { //배열만큼 돌려서
+			input[i] = Integer.parseInt(br.readLine());
 			//42로 나눈 숫자가 arr배열에 있지 않으면 추가
 			int left = input[i]%42;
 			if(!arr.contains(left)) 
