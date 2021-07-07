@@ -23,7 +23,8 @@ public class Method_1065 {
 				int a = i/100;
 				int b = (i/10)%10;
 				int c = i%10;
-				if(a-b==b-c) 
+				
+				if(a-b==b-c) //두 수 차이가 같을 경우
 					count++;		
 			}
 		}
